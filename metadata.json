@@ -1,0 +1,6 @@
+{
+  "name": "Fisioterapia para Pessoas Idosas em Recife",
+  "description": "Fisioterapia domiciliar especializada para idosos em Recife. Atendimento personalizado para reabilitação física, prevenção de quedas, gerontologia e melhora da mobilidade no conforto do lar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

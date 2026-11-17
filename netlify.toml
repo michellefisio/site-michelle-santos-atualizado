@@ -1,0 +1,40 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Camada extra de segurança: garante o domínio canônico
+# (com www, https) mesmo que a config de domínio no Netlify mude.
+[[redirects]]
+  from = "https://fisiomichellesantos.com.br/*"
+  to = "https://www.fisiomichellesantos.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://fisiomichellesantos.com.br/*"
+  to = "https://www.fisiomichellesantos.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.fisiomichellesantos.com.br/*"
+  to = "https://www.fisiomichellesantos.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicos/*"
+  to = "/tratamentos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicos"
+  to = "/tratamentos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
