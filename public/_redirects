@@ -1,0 +1,4 @@
+/servicos/*    /tratamentos/    301!
+/servicos      /tratamentos/    301!
+/servicos/     /tratamentos/    301!
+/*             /index.html      200
