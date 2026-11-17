@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-primary: #0d9488;
+  --color-brand-primary-light: #14b8a6;
+  --color-brand-primary-dark: #0f766e;
+  
+  --color-brand-secondary: #0f766e;
+  --color-brand-secondary-light: #14b8a6;
+  --color-brand-secondary-dark: #115e59;
+  
+  --color-brand-accent: #0f766e;
+  --color-brand-accent-light: #2dd4bf;
+  --color-brand-accent-dark: #134e4a;
+  
+  --color-brand-background: #f8fafc;
+  --color-brand-surface: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom design system styling rules from ARA8 */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-background);
+  color: #334155;
+  overflow-x: hidden;
+}
+
+/* Base interactive focus outline styles for accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-brand-primary-light);
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   Clean Minimalism Color Overrides 
+   ========================================== */
+
+/* Hex #1A3C5A Overrides -> Teal-700 (#0f766e) */
+.text-\[\#1A3C5A\] {
+  color: #0f766e !important;
+}
+.bg-\[\#1A3C5A\] {
+  background-color: #0f766e !important;
+}
+.bg-\[\#1A3C5A\]\/90 {
+  background-color: rgba(15, 118, 110, 0.9) !important;
+}
+.bg-\[\#1A3C5A\]\/10 {
+  background-color: rgba(15, 118, 110, 0.1) !important;
+}
+.border-\[\#1A3C5A\] {
+  border-color: #0f766e !important;
+}
+.border-\[\#1A3C5A\]\/50 {
+  border-color: rgba(15, 118, 110, 0.5) !important;
+}
+.hover\:bg-\[\#1A3C5A\]\/90:hover {
+  background-color: rgba(15, 118, 110, 0.9) !important;
+}
+.hover\:text-\[\#1A3C5A\]:hover {
+  color: #0f766e !important;
+}
+.focus\:ring-\[\#1A3C5A\]\/30:focus {
+  --tw-ring-color: rgba(15, 118, 110, 0.3) !important;
+}
+.selection\:text-\[\#1A3C5A\] *::selection {
+  color: #0f766e !important;
+}
+.selection\:text-\[\#1A3C5A\]::selection {
+  color: #0f766e !important;
+}
+
+/* Hex #4A9B9B Overrides -> Teal-600 (#0d9488) */
+.text-\[\#4A9B9B\] {
+  color: #0d9488 !important;
+}
+.bg-\[\#4A9B9B\] {
+  background-color: #0d9488 !important;
+}
+.bg-\[\#4A9B9B\]\/10 {
+  background-color: rgba(13, 148, 136, 0.1) !important;
+}
+.bg-\[\#4A9B9B\]\/5 {
+  background-color: rgba(13, 148, 136, 0.05) !important;
+}
+.border-\[\#4A9B9B\] {
+  border-color: #0d9488 !important;
+}
+.selection\:bg-\[\#4A9B9B\]\/20 *::selection {
+  background-color: rgba(13, 148, 136, 0.2) !important;
+}
+.selection\:bg-\[\#4A9B9B\]\/20::selection {
+  background-color: rgba(13, 148, 136, 0.2) !important;
+}
+
+/* Hex #F2A900 Overrides -> Teal-600 (#0d9488) */
+.text-\[\#F2A900\] {
+  color: #0d9488 !important;
+}
+.bg-\[\#F2A900\] {
+  background-color: #0d9488 !important;
+}
+.bg-\[\#F2A900\]\/10 {
+  background-color: rgba(13, 148, 136, 0.08) !important;
+}
+.bg-\[\#F2A900\]\/5 {
+  background-color: rgba(13, 148, 136, 0.04) !important;
+}
+.border-\[\#F2A900\] {
+  border-color: #0d9488 !important;
+}
+.hover\:bg-\[\#F2A900\]\/95:hover {
+  background-color: #0f766e !important;
+}
+
+/* Hex #F5F7FA Background Overrides -> slate-50 (#f8fafc) */
+.bg-\[\#F5F7FA\] {
+  background-color: #f8fafc !important;
+}
